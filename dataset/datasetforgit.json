@@ -1,0 +1,29 @@
+{
+	"name": "datasetforgit",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedserviceforblob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "hello.csv",
+				"folderPath": "input",
+				"container": "container"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Hi this is for adf file and storing in github. ",
+				"type": "String"
+			}
+		]
+	}
+}
